@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/your_program_video.dir/videoprocess.cpp.o"
-  "your_program_video.pdb"
+  "CMakeFiles/your_program_video.dir/videoprocess.cpp.o.d"
   "your_program_video"
+  "your_program_video.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

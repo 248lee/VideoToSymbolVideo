@@ -23,7 +23,7 @@ int main()
     int frameHeight = static_cast<int>(video.get(cv::CAP_PROP_FRAME_HEIGHT));
 
     const int extract_frame_count = 1;
-    const int extract_pixel_count = 3;
+    const int extract_pixel_count = 6;
     std::cout << "Totally " << frameCount << " frames.\n";
 
     // Process each frame
@@ -69,10 +69,10 @@ int main()
 
         vector<vector<char>> result;
 
-        for (int i = 0; i < rows - 3; i += 3)
+        for (int i = 0; i < rows - extract_pixel_count; i += extract_pixel_count)
         {
             vector<char> tmp;
-            for (int j = 0; j < cols - 3; j += 3)
+            for (int j = 0; j < cols - extract_pixel_count; j += extract_pixel_count)
             {
                 int avg = 0;
                 for (int k = 0; k < extract_pixel_count; k++)
