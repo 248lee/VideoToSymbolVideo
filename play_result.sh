@@ -6,7 +6,7 @@ open_new_konsole() {
     konsole -e "$SHELL" -c "$audio_command; $SHELL"
 }
 
-mpg123 "music.mp3"&
+mpg123 "rickroll.mp3"&
 
 # Directory containing the processed video frames
 directory="processed_video"
